@@ -1,0 +1,125 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.1.1f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/ArshitaSandhiparthi/Desktop/Project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52020
+Successfully changed project path to: /Users/ArshitaSandhiparthi/Desktop/Project
+/Users/ArshitaSandhiparthi/Desktop/Project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 28.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.1f1 (6fdc41dfa55a)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.1.1f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/ArshitaSandhiparthi/Desktop/Project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+2021-04-02 02:36:47.776 Unity[45183:801223] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2021-04-02 02:36:47.776 Unity[45183:801223] Metal devices available: 1
+2021-04-02 02:36:47.776 Unity[45183:801223] 0: Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2021-04-02 02:36:47.776 Unity[45183:801223] Using device Intel(R) Iris(TM) Plus Graphics 640 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 640
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.1.1f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.1.1f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.1.1f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56183
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.1.1f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000515 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 26.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.231 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002332 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.054 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.1.1f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1300 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.5 MB.
+System memory in use after: 126.6 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 1787.
+Total: 3.121395 ms (FindLiveObjects: 0.432239 ms CreateObjectMapping: 0.153996 ms MarkObjects: 2.457768 ms  DeleteObjects: 0.075340 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Kevin Iglesias/Basic Motions Pack/Textures/BasicMotionsTexture.png
+  artifactKey: Guid(fad9765a35536374695ea4ff22aca373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions Pack/Textures/BasicMotionsTexture.png using Guid(fad9765a35536374695ea4ff22aca373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ef71c3e36dc4ac6e256148e394cf597') in 0.466251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 63.620336 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Idle01.fbx
+  artifactKey: Guid(59a515d01e333a74c82eb5c7c8434049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Idle01.fbx using Guid(59a515d01e333a74c82eb5c7c8434049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3003a1efc8cf76710fa70c55e71d3f91') in 0.241159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@RunBackwards01.fbx
+  artifactKey: Guid(1824a4a2dfb1f504d986afd32c89d22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@RunBackwards01.fbx using Guid(1824a4a2dfb1f504d986afd32c89d22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '880d963fd4a1435eb339df688a2dd7a5') in 0.026277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Idle01 - Idle02.fbx
+  artifactKey: Guid(f76369a9462327a4eb446ad259708577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Idle01 - Idle02.fbx using Guid(f76369a9462327a4eb446ad259708577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f00cfbf2704fcd9151235ffa243da11c') in 0.015256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000737 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Run01.fbx
+  artifactKey: Guid(cdcf0f712db52854aaa116824fd83296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Run01.fbx using Guid(cdcf0f712db52854aaa116824fd83296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9df7962b0ddbab73848c71f3ccaaebc') in 0.015440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Idle02 - Idle01.fbx
+  artifactKey: Guid(1f0b2bcd26555054ebe091c163eed39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Idle02 - Idle01.fbx using Guid(1f0b2bcd26555054ebe091c163eed39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61e47bec5af954681bc40dbf435a1355') in 0.007793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Jump01.fbx
+  artifactKey: Guid(7f0ffdcc529388b48bf0f30b84d26263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Jump01.fbx using Guid(7f0ffdcc529388b48bf0f30b84d26263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '963296b841029eed013d9b50ce99b197') in 0.039943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Walk01.fbx
+  artifactKey: Guid(6e2bfa8498b0db840865dd4eb42ce0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Walk01.fbx using Guid(6e2bfa8498b0db840865dd4eb42ce0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f5c31c2dc224e19f58256f7553a494d') in 0.030389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Sprint01.fbx
+  artifactKey: Guid(89b9b900b51d4df4cbe7f2a5373669ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Sprint01.fbx using Guid(89b9b900b51d4df4cbe7f2a5373669ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825d58ca833323ac79d112ae05a2dee1') in 0.014672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Idle02.fbx
+  artifactKey: Guid(3e331de7ae1981a4d80aa5799e9b3afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Idle02.fbx using Guid(3e331de7ae1981a4d80aa5799e9b3afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48609fd52921767d11bc5fdcce8e72ae') in 0.012794 seconds 
