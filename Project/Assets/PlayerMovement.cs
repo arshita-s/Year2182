@@ -10,12 +10,18 @@ public class PlayerMovement : MonoBehaviour
     public RuntimeAnimatorController walk;
     public RuntimeAnimatorController idle;
     public RuntimeAnimatorController sprint;
-    public float isprinting = 0;
+    public RuntimeAnimatorController jump;
+    public bool isSprinting = false;
+    public Rigidbody body;
 
     public float speed = 6f;
 
     public float turnSmoothTime = 0.1f;
+    public float gravity = 8;
     private float turnSmoothVelocity;
+    public float jumpSpeed = 10f;
+    public bool isJumping = false;
+    public float vspeed = 0f;
 
     // Update is called once per frame
     void Update()
@@ -24,8 +30,10 @@ public class PlayerMovement : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
+        // When the player wants to move
         if (direction.magnitude >= 0.1f)
         {
+            // Adjust the angle of the avatar based on the camera
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
@@ -33,19 +41,20 @@ public class PlayerMovement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
 
+            // Sprinting logic
             if (Input.GetMouseButtonDown(1))
             {
-                if(isprinting == 0)
+                if (!isSprinting)
                 {
-                    isprinting = 1;
+                    isSprinting = true;
                 }
                 else
                 {
-                    isprinting = 0;
+                    isSprinting = false;
                 }
             }
 
-           if (isprinting == 1)
+            if (isSprinting)
             {
                 anim.runtimeAnimatorController = sprint as RuntimeAnimatorController;
                 speed = 11;
@@ -55,11 +64,22 @@ public class PlayerMovement : MonoBehaviour
                 anim.runtimeAnimatorController = walk as RuntimeAnimatorController;
                 speed = 6;
             }
-
         }
         else
         {
             anim.runtimeAnimatorController = idle as RuntimeAnimatorController;
         }
+        if(controller.isGrounded)
+        {
+            vspeed = -1;
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                anim.runtimeAnimatorController = jump as RuntimeAnimatorController;
+                vspeed = jumpSpeed;
+            }
+        }
+        vspeed -= gravity * Time.deltaTime;
+        direction.y = vspeed;
+        controller.Move(direction * Time.deltaTime);
     }
 }

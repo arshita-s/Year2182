@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PlayerMovement.cs">
     <Files>
-      <File FileName="Assets/PlayerMovement.cs" Line="56" Column="27" />
+      <File FileName="Assets/PlayerMovement.cs" Line="57" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e884321c-b227-4369-b299-934fc1f9069a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="dfbecb7e-770d-4783-a456-dfb4c700698e" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
