@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
     public RuntimeAnimatorController walk;
     public RuntimeAnimatorController idle;
+    public RuntimeAnimatorController sprint;
+    public float isprinting = 0;
 
     public float speed = 6f;
 
@@ -30,12 +32,34 @@ public class PlayerMovement : MonoBehaviour
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
-            anim.runtimeAnimatorController = walk as RuntimeAnimatorController;
+
+            if (Input.GetMouseButtonDown(1))
+            {
+                if(isprinting == 0)
+                {
+                    isprinting = 1;
+                }
+                else
+                {
+                    isprinting = 0;
+                }
+            }
+
+           if (isprinting == 1)
+            {
+                anim.runtimeAnimatorController = sprint as RuntimeAnimatorController;
+                speed = 11;
+            }
+            else
+            {
+                anim.runtimeAnimatorController = walk as RuntimeAnimatorController;
+                speed = 6;
+            }
+
         }
         else
         {
             anim.runtimeAnimatorController = idle as RuntimeAnimatorController;
         }
-
     }
 }
