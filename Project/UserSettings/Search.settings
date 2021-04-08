@@ -8,14 +8,14 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.785D90A9" = "create freelook camera"
+	"last_search.785D90A9" = "mapbox setup"
 	"asset.785D90A9" = "True"
 	"menu.785D90A9" = "True"
 	"scene.785D90A9" = "True"
 	"settings.785D90A9" = "True"
 	"m_ShownPanels.785D90A9" = "3"
-	"m_SideBarSplitter.785D90A9" = "180"
-	"m_DetailsPanelSplitter.785D90A9" = "700"
+	"m_SideBarSplitter.785D90A9" = "80"
+	"m_DetailsPanelSplitter.785D90A9" = "257"
 	"currentGroup.785D90A9" = "all"
 }
 providers = {
@@ -56,5 +56,6 @@ providers = {
 	}
 }
 recentSearches = [
+	"create freelook camera"
 ]
 savedSearchesSortOrder = 0

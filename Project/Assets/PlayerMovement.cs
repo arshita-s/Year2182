@@ -13,13 +13,14 @@ public class PlayerMovement : MonoBehaviour
     public RuntimeAnimatorController jump;
     public bool isSprinting = false;
     public Rigidbody body;
+    Vector3 playerVelocity = new Vector3(0,0,0);
 
     public float speed = 6f;
 
     public float turnSmoothTime = 0.1f;
-    public float gravity = 8;
+    public float gravity = 10;
     private float turnSmoothVelocity;
-    public float jumpSpeed = 10f;
+    public float jumpSpeed = 6f;
     public bool isJumping = false;
     public float vspeed = 0f;
 
@@ -54,32 +55,28 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
 
-            if (isSprinting)
+            if (isSprinting && !isJumping)
             {
                 anim.runtimeAnimatorController = sprint as RuntimeAnimatorController;
                 speed = 11;
             }
-            else
+            else if(!isJumping)
             {
                 anim.runtimeAnimatorController = walk as RuntimeAnimatorController;
                 speed = 6;
             }
         }
-        else
+        else if(!isJumping)
         {
             anim.runtimeAnimatorController = idle as RuntimeAnimatorController;
         }
-        if(controller.isGrounded)
+        if (controller.isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
-            vspeed = -1;
-            if(Input.GetKeyDown(KeyCode.Space))
-            {
-                anim.runtimeAnimatorController = jump as RuntimeAnimatorController;
-                vspeed = jumpSpeed;
-            }
+            playerVelocity.y += Mathf.Sqrt(jumpSpeed * -3.0f * -gravity);
+
+            anim.runtimeAnimatorController = jump as RuntimeAnimatorController;
         }
-        vspeed -= gravity * Time.deltaTime;
-        direction.y = vspeed;
-        controller.Move(direction * Time.deltaTime);
+        playerVelocity.y -= gravity * Time.deltaTime;
+        controller.Move(playerVelocity * Time.deltaTime);
     }
 }
