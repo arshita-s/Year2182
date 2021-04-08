@@ -2,12 +2,13 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/mainMenu.cs">
     <Files>
       <File FileName="Assets/Mapbox/Unity/Telemetry/TelemetryEditor.cs" Line="88" Column="1" />
-      <File FileName="Assets/mainMenu.cs" Line="15" Column="28" />
+      <File FileName="Assets/mainMenu.cs" Line="26" Column="35" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0f1082b5-c8a3-43a5-a7c6-77e3e9b41014" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="44be5713-8550-44d7-8fbc-6873c6e12c5e" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
