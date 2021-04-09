@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public RuntimeAnimatorController idle;
     public RuntimeAnimatorController sprint;
     public RuntimeAnimatorController jump;
+    public WarningNotification w;
     public bool isSprinting = false;
     public Rigidbody body;
     Vector3 playerVelocity = new Vector3(0,0,0);
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpSpeed = 6f;
     public bool isJumping = false;
     public float vspeed = 0f;
+    public float numMoney = 0;
 
     // Update is called once per frame
     void Update()
@@ -30,6 +32,11 @@ public class PlayerMovement : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+        
+
+        // Check collision with barrier
+
+
 
         // When the player wants to move
         if (direction.magnitude >= 0.1f)
@@ -79,4 +86,26 @@ public class PlayerMovement : MonoBehaviour
         playerVelocity.y -= gravity * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
     }
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if(hit.gameObject.layer == 3)
+        {
+            return;
+        }
+
+        Debug.Log("Here");
+
+        if (hit.gameObject.CompareTag("Barrier"))
+        {
+            Debug.Log("bruh");
+            w.playWarning();
+        }
+        else if (hit.gameObject.CompareTag("Money"))
+        {
+            Debug.Log("hi");
+            Object.Destroy(hit.gameObject);
+            numMoney++;
+        }
+    }
+    
 }
