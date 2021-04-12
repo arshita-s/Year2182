@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{6CDB4719-1D28-38FF-BF92-A07FF7EAE25F}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NewMonoBehaviour.cs">
+    <Files>
+      <File FileName="NewMonoBehaviour.cs" Line="10" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Assembly-CSharp-Editor" expanded="True">
+            <Node name="Assets" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="2cff074c-d803-468a-9b1c-d9d826836f40" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

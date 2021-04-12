@@ -1,14 +1,13 @@
 ﻿<Properties StartupConfiguration="{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ProgressBar.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="101" Column="29" />
-      <File FileName="Assets/NotificationManager.cs" Line="59" Column="6" />
-      <File FileName="WarningNotification.cs" Line="10" Column="6" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="103" Column="49" />
+      <File FileName="Assets/Scripts/ProgressBar.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="773fe6b5-2281-4ef4-abf4-a5e0f6ecf9d3" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f2ede18f-a0ef-4977-8a70-5dafa6addb8f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

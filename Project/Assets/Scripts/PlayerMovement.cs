@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isSprinting = false;
     public Rigidbody body;
     Vector3 playerVelocity = new Vector3(0,0,0);
+    public ProgressBar progressBar;
 
     public float speed = 6f;
 
@@ -24,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpSpeed = 6f;
     public bool isJumping = false;
     public float vspeed = 0f;
-    public float numMoney = 0;
+    public int numMoney = 0;
 
     // Update is called once per frame
     void Update()
@@ -105,6 +106,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("hi");
             Object.Destroy(hit.gameObject);
             numMoney++;
+            progressBar.setProgress(numMoney);
         }
     }
     
