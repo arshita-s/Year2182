@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class mainMenu : MonoBehaviour
 {
+    PlayerMovement player;
+    scoreField scoring;
+
     public void playGame()
     { 
         SceneManager.LoadScene(1);

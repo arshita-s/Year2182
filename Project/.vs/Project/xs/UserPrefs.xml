@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PauseGame.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMovement.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="106" Column="29" />
-      <File FileName="Assets/Scripts/ProgressBar.cs" Line="13" Column="6" />
-      <File FileName="Assets/Scripts/mainMenu.cs" Line="34" Column="6" />
-      <File FileName="Assets/Scripts/PauseGame.cs" Line="7" Column="6" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="93" Column="26" />
+      <File FileName="Assets/Scripts/ProgressBar.cs" />
+      <File FileName="Assets/Scripts/mainMenu.cs" />
+      <File FileName="Assets/Scripts/PauseGame.cs" />
+      <File FileName="Assets/Scripts/scoreField.cs" Line="19" Column="39" />
+      <File FileName="Assets/Scripts/NotificationManager.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isJumping = false;
     public float vspeed = 0f;
     public int numMoney = 0;
+    public float gameTime = 0;
 
     // Update is called once per frame
     void Update()
@@ -33,10 +35,10 @@ public class PlayerMovement : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
-        
 
-        // Check collision with barrier
 
+        // Track time
+        gameTime += Time.deltaTime;
 
 
         // When the player wants to move
@@ -86,7 +88,16 @@ public class PlayerMovement : MonoBehaviour
         }
         playerVelocity.y -= gravity * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
+
+        // Checking for win condition and switching to game screen
+        if (numMoney == 20)
+        {
+            WaitForATime(3);
+            SceneManager.LoadScene(2);
+        }
     }
+
+    // Collision detection logic for barriers and money
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
         if(hit.gameObject.layer == 3)
@@ -109,5 +120,11 @@ public class PlayerMovement : MonoBehaviour
             progressBar.setProgress(numMoney);
         }
     }
-    
+
+    IEnumerator WaitForATime(float t)
+    {
+        yield return new WaitForSeconds(t);
+
+        // Code to execute after the delay
+    }
 }
