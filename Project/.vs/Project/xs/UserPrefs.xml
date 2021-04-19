@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PopUp.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Music/volumeAdjuster.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="93" Column="27" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="121" Column="24" />
       <File FileName="Assets/Scripts/ProgressBar.cs" />
       <File FileName="Assets/Scripts/mainMenu.cs" />
       <File FileName="Assets/Scripts/PauseGame.cs" />
       <File FileName="Assets/Scripts/scoreField.cs" />
       <File FileName="Assets/Scripts/NotificationManager.cs" />
-      <File FileName="Assets/Scripts/PopUp.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PopUp.cs" Line="31" Column="26" />
+      <File FileName="Assets/Music/volumeAdjuster.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f2ede18f-a0ef-4977-8a70-5dafa6addb8f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3997f7b7-7993-41f1-9dd9-f9a4282bcc1d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -6,6 +6,7 @@ using TMPro;
 public class PopUp : MonoBehaviour
 {
     public GameObject popUp;
+    public bool open = false;
 
     public void popUpBox()
     {
@@ -19,13 +20,15 @@ public class PopUp : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.T) && !open)
         {
             popUpBox();
+            open = true;
         }
-    }
-    public void closeIt()
-    {
-        popUp.SetActive(false);
+        else if(Input.GetKeyDown(KeyCode.T) && open)
+        {
+            popUp.SetActive(false);
+            open = false;
+        }
     }
 }

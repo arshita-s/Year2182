@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody body;
     Vector3 playerVelocity = new Vector3(0,0,0);
     public ProgressBar progressBar;
+    public List<GameObject> collected;
 
     public float speed = 6f;
 
@@ -112,11 +113,13 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("bruh");
             w.playWarning();
         }
-        else if (hit.gameObject.CompareTag("Money"))
+        else if (hit.gameObject.CompareTag("Money") && !collected.Contains(hit.gameObject))
         {
             Debug.Log("hi");
+            collected.Add(hit.gameObject);
             Object.Destroy(hit.gameObject);
             numMoney++;
+            Debug.Log(numMoney);
             progressBar.setProgress(numMoney);
         }
     }
